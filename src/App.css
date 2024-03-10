@@ -1,0 +1,92 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.question{
+  margin:20px auto;
+  width:60%;
+  border:1px solid #ddd;
+  padding:15px;
+  border-bottom: 5px;
+
+}
+.question h2{
+  margin-bottom: 10px;
+}
+.options{
+  list-style: none;
+  padding: 0;
+  display:grid;
+  grid-template-columns: auto auto;
+  gap:10px;
+}
+.options > li> button {
+  margin-bottom:10px;
+  width:100%;
+}
+.button{
+  padding:10px 20px;
+  border:none;
+  border-radius: 5px;
+  cursor:pointer;
+}
+.results{
+  margin:20px auto;
+  border:1px solid #ddd;
+  padding:15px;
+  border-bottom: 5px;
+}
+.results ul{
+  list-style: none;
+  padding:0;
+}
+.results span{
+  color:red;
+  font-weight: 800;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.results li{
+  margin-bottom: 10px;
+}
+.results li[data-correct="true"]{
+  color:green;
+}
+.results li[data-correct="false"]{
+  color:red;
+}
